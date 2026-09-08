@@ -1,5 +1,5 @@
 # CSIPBLLM — RAG Evaluation
-Evaluator ini mengukur kualitas sistem RAG dari dua sisi. Sisi retrieval (seberapa relevan chunk yang diambil) dan sisi generation (seberapa faktual dan berkualitas jawaban LLM berdasarkan chunk tersebut), lalu membandingkannya dengan baseline tanpa RAG.
+Kode evaluasi RL untuk skripsi: "Evaluasi Large Language Model Berdasarkan RAG, Prompt Engineering, dan Reinforcement Learning" Vergiawan Zhaki Rasendria — G6401221101 — IPB University
 
 ---
 

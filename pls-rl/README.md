@@ -62,7 +62,7 @@ Semua perintah dijalankan dari dalam folder `pls_ct_rl/`.
 ### 1. Smoke test — verifikasi setup (±2 menit, hemat API)
 
 ```bash
-python compare7.py --smoke
+python compare.py --smoke
 ```
 
 Menjalankan 1 model, 1 seed, 8 pertanyaan. Kalau berhasil, lanjut ke full run.
@@ -70,13 +70,13 @@ Menjalankan 1 model, 1 seed, 8 pertanyaan. Kalau berhasil, lanjut ke full run.
 ### 2. Full thesis run — 6 model × 8 seed × 50 pertanyaan
 
 ```bash
-python compare7.py --full
+python compare.py --full
 ```
 
 ### 3. Custom subset
 
 ```bash
-python compare7.py \
+python compare.py \
   --models deepseek/deepseek-v3.2 qwen/qwen3-32b \
   --providers openrouter openrouter \
   --seeds 42 43 44 \
@@ -86,7 +86,7 @@ python compare7.py \
 ### 4. Dengan fixed judge (mengurangi self-evaluation bias)
 
 ```bash
-python compare7.py --full \
+python compare.py --full \
   --fixed-judge-model x-ai/grok-4-fast \
   --fixed-judge-provider openrouter \
   --label-source truth

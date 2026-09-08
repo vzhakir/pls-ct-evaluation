@@ -1,0 +1,13 @@
+fastapi 
+uvicorn 
+requests 
+pydantic 
+numpy 
+python-multipart
+faiss-cpu
+langchain
+langchain-community
+langchain-ollama
+openai
+python-dotenv
+httpx
